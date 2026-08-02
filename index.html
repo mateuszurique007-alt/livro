@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti, Meu Amor Luana ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="book">
+
+    <!-- Lombada -->
+    <div class="spine"></div>
+
+    <!-- CAPA -->
+    <div class="page cover" id="cover">
+
+        <div class="cover-content">
+
+            <h1>Para Ti</h1>
+
+            <h2>Meu Amor</h2>
+
+            <h3>Luana ❤️</h3>
+
+            <p class="subtitle">
+                Um pequeno livro feito com todo o meu coração.
+            </p>
+
+            <button onclick="openBook()">
+                Abrir Livro
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- PÁGINA 1 -->
+    <div class="page" id="page1">
+
+        <div class="page-content">
+
+            <h2>Capítulo I</h2>
+
+            <h3>Meu Amor ❤️</h3>
+
+            <p>
+                Desde o momento em que te conheci, a minha vida mudou para melhor.
+                Já são 4 meses e 19 dias e cada dia é mais belo contigo.
+            </p>
+
+            <p>
+                Cada sorriso teu tornou os meus dias mais leves.
+                Cada abraço teu fez-me sentir em casa.
+            </p>
+
+            <p>
+                Obrigado por seres exatamente quem és.
+            </p>
+
+        </div>
+
+        <div class="page-number">
+            Página 1
+        </div>
+
+        <button class="next" onclick="nextPage()">
+            Próxima →
+        </button>
+
+    </div>
+
+    <!-- PÁGINA 2 -->
+    <div class="page" id="page2">
+
+        <div class="page-content">
+
+            <h2>Capítulo II</h2>
+
+            <h3>Para Sempre 💕</h3>
+
+            <p>
+                Obrigado pelos momentos,
+                pelas conversas,
+                pelos sorrisos
+                e por todo o carinho.
+            </p>
+
+            <p>
+                Espero continuar a escrever
+                esta linda história contigo,
+                página após página.
+            </p>
+
+            <p>
+                O meu coração escolheu ficar
+                ao teu lado.
+            </p>
+
+        </div>
+
+        <div class="page-number">
+            Página 2
+        </div>
+
+        <button class="back" onclick="previousPage()">
+            ← Voltar
+        </button>
+
+        <button class="finish-button" onclick="finishBook()">
+            Fim →
+        </button>
+
+    </div>
+
+    <!-- PÁGINA FINAL -->
+    <div class="page final" id="final">
+
+        <div class="page-content">
+
+            <h1>Eu Amo-te ❤️</h1>
+
+            <h2>
+                Hoje.<br>
+                Amanhã.<br>
+                E por toda a eternidade.
+            </h2>
+
+            <p>
+                Obrigado por fazeres parte
+                da minha vida panina.
+            </p>
+
+            <p class="signature">
+                Com amor,<br>
+                Zuriel Mateus ❤️
+            </p>
+
+        </div>
+
+        <button class="back" onclick="backToPage2()">
+            ← Fim
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Música opcional -->
+<audio id="music" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Som de virar página -->
+<audio id="flip">
+    <source src="assets/page.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<button class="end-button" onclick="restartBook()">
+    Fim.
+</button>
