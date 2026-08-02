@@ -1029,4 +1029,9 @@ font-size: 1.35rem !important;
         width: 92vw !important;
         max-width: 380px !important;
     }
+   .spine {
+    width: 18px;
+    left: 50%;
+    transform: translateX(-50%) translateZ(-10px);
+}
 }
