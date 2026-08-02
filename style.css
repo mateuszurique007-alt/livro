@@ -1038,3 +1038,8 @@ font-size: 1.35rem !important;
     transform: translateX(-50%) translateZ(-10px);
 }
 }
+.spine {
+    display: none !important;
+    background: red !important;
+    width: 100px !important;
+}
